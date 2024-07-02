@@ -1,0 +1,31 @@
+该博客论坛系统是由若依框架所搭建。
+后端项目搭建步骤如下：
+1.git上先克隆并初始化项目。
+2.在ruoyi-blog前后台管理代码里ruoyi-admin文件包里面的application-durid.yml进行MySQL的导入与配置。在application里面配置redis
+3.启动redis
+4.运行后端项目
+5.运行前端项目需要安装依赖来运行前端
+
+
+评论模块   ruoyi-ui\src\views\cms\components\comment\comments.vue
+评论模块2 ruoyi-ui\src\views\cms\components\comment\Ipcomment.vue
+首页模块 ruoyi-ui\src\views\cms\NavBar.vue
+登录模块 ruoyi-ui\src\views\cms\cmslogin.vue
+
+
+
+
+
+ruoyi-framework: 这是若依项目的框架核心部分，包含了基础的工具类、配置、安全控制、数据库操作等模块，是整个项目的基础架构层。
+ruoyi-common: 包含一些常用的工具类和常量定义，如日期处理、字符串处理、异常处理等，这些工具类可以在项目中被广泛复用。
+ruoyi-system: 通常包含系统的业务逻辑代码，如用户管理、角色权限管理、菜单管理等模块的具体实现。
+ruoyi-generator: 代码生成器模块，可以根据数据库表结构自动生成实体类、Mapper接口、Service层、Controller层等代码，大幅提高开发效率。
+ruoyi-module: 可能包含多个子模块，每个子模块对应一个特定的业务领域，比如订单管理、商品管理等，具体取决于项目需求。
+config: 配置文件夹，存放应用的各种配置文件，如application.yml或application.properties，用于配置数据源、服务器端口、邮件服务等。
+mapper: 数据访问层，存放MyBatis的Mapper接口文件，负责SQL查询的定义。
+service: 业务逻辑层，封装具体的业务处理逻辑。
+controller: 控制器层，负责接收HTTP请求，调用Service处理业务，并返回响应给前端。
+resources: 资源文件夹，包括静态资源、模板文件、国际化配置文件等。
+
+
+服务器：http://121.43.110.169:8020/
